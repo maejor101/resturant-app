@@ -4,14 +4,6 @@ var modal = document.getElementById("myModal");   // Get the modal
 var btn = document.getElementById("myBtn"); // Get the button that opens the modal
 var span = document.getElementsByClassName("close")[0]; // Get the <span> element that closes the modal
 
-var modal2 = document.getElementById("myModal2")
-var btn2 = document.getElementById("myBtn2");
-
-btn2.onclick = function () {              // When the user clicks on the button, open the modal
-  modal.style.display = "block";
-  console.log(btn2)
-}
-
 // CART POP UP MODAL
 
 var cartMod = document.getElementById("cartModal");   // Get the modal
@@ -35,10 +27,8 @@ window.onclick = function (event) {
 
 
 
-
 btn.onclick = function () {              // When the user clicks on the button, open the modal
   modal.style.display = "block";
-  console.log(btn)
 }
 span.onclick = function () {         // When the user clicks on <span> (x), close the modal
   modal.style.display = "none";
