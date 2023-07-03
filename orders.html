@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Zozo cafe</title>
+</head>
+<!--NavBar section-->
+
+<body>
+  <div class="navbar">
+    <a href="orders.html">Order</a>
+    <a href="menu.html">Menu</a>
+    <a href="home.html">Home</a>
+  </div>
+
+  <!--Breakfast section-->
+  <div id="menu_col">
+    <h1>Breakfast</h1>
+    <button id="myBtn">Civilised Jungle</button>
+    <button id="myBtn">Wet Crossaint</button>
+    <button id="myBtn">Posch Cereal</button>
+    <button id="myBtn">Lux Motepa</button>
+
+    <!-- Breakfast Modal section  -->
+
+    <div id="myModal" class="modal">
+
+      <div class="modal-content">
+
+        <form action="/orders.html">
+
+
+          <p>Selects Jungle Oats Type:</p>
+            <input type="radio" id="oatsType" name="oatsColor" value="Mabele">
+            <label for="Mabele">Mabele</label><br>
+            <input type="radio" id="oatsType" name="oatsColor" value="Ting">
+            <label for="Ting">Ting</label><br>
+            <input type="radio" id="oatsType" name="oatsColor" value="Swiri">
+            <label for="Swiri">Swiri</label><br>
+          <button onclick="storeRadio()">Add</button>
+          <span class="close">&times;</span>
+          <form action="/orders.html">
+
+            <p>Add extras</p><br>
+
+            <input type="checkbox" id="break1" name="break1" value="Banna Chops">
+            <label for="oats1"> Banna Chops</label><br>
+            <input type="checkbox" id="break2" name="break2" value="dry lemons">
+            <label for="oats2"> dry lemons</label><br>
+            <input type="checkbox" id="break3" name="break3" value="Cashew peanuts">
+            <label for="oats3"> Cashew peanuts</label><br><br>
+            <button id="cartShow" onclick="storeOrder()">Send Order</button>
+      </div>
+    </div>
+    <!-- end of Breakfast modal -->
+    <!--Lunch  section-->
+    <div id="menu_col">
+      <h1>Lunch</h1>
+      <button id="myBtn">Guava Chicken</button>
+      <button id="myBtn">Tropical Pizza</button>
+      <button id="myBtn">CowLy Chiproll</button>
+      <button id="myBtn">Cashew Nama</button>
+
+      <!-- Lunch  modal -->
+      <div id="myModal2" class="modal">
+
+        <div class="modal-content">
+
+          <form action="/orders.html">
+            <p>Selects Hungle Oats Type:</p>
+              <input type="radio" id="oatsType" name="oatsColor" value="Mabele">
+              <label for="Mabele">Mabele</label><br>
+              <input type="radio" id="oatsType" name="oatsColor" value="Ting">
+              <label for="Ting">Ting</label><br>
+              <input type="radio" id="oatsType" name="oatsColor" value="Swiri">
+              <label for="Swiri">Swiri</label><br>
+
+
+            <span class="close">&times;</span>
+            <form action="/orders.html">
+
+              <p>Add extras</p><br>
+
+              <input type="checkbox" id="break1" name="break1" value="oats1">
+              <label for="break1"> Banna Chops</label><br>
+              <input type="checkbox" id="break2" name="break2" value="oats2">
+              <label for="oats2"> dry lemons</label><br>
+              <input type="checkbox" id="break3" name="break3" value="oats3">
+              <label for="oats3"> Cashew peanuts</label><br><br>
+              <input type="submit" value="Order">
+        </div>
+      </div>
+                                  <!-- end of Lunch modal -->
+
+
+                                    <!-- Dinner Section -->
+                  
+        <div id="menu_col">
+          <h1>Dinner</h1>
+          <button id="myBtn" >Sirloin platte</button>
+          <button id="myBtn">T-bone Platte</button>
+          <button id="myBtn">Lamb Shank</button>
+          <button id="myBtn">Mutton Curry</button>
+        
+                                  <!-- Dinner  modal -->
+
+          <div id="myModal3" class="modal">
+        
+            <div class="modal-content">
+            
+            <form action="/orders.html">
+              <p>Select steak  Type:</p>
+              <input type="radio" id="oatsType" name="oatsColor" value="Mabele">
+              <label for="Mabele">Rare</label><br>
+              <input type="radio" id="oatsType" name="oatsColor" value="Ting">
+              <label for="Ting">Medium Rare</label><br>
+              <input type="radio" id="oatsType" name="oatsColor" value="Swiri">
+              <label for="Swiri">Well done</label><br>
+            
+                  <span class="close">&times;</span>
+                  <form action="/orders.html">
+                    
+              <p>Add extras</p><br>
+            
+              <input type="checkbox" id="Dinner1" name="Dinner1" value="steak1">
+              <label for="steak1"> Creamy Mushroom</label><br>
+              <input type="checkbox" id="Dinner2" name="Dinner2" value="steak2">
+              <label for="steak2"> Cashew Sauce</label><br>
+              <input type="checkbox" id="Dinner3" name="Dinner3" value="steak3">
+              <label for="steak3"> BBQ fries</label><br><br>
+              <input type="submit" value="Order">
+                </div>
+              </div>
+                               <!-- end Dinner of modal -->
+    </div>
+  </div>
+
+  <!--cart pop section-->
+
+  <div id="cartModal" class="modal">
+
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form action="/orders.html">
+
+
+        <p id="cartOrder-el">Your order: </p>
+
+      </form>
+    </div>
+
+    
+  </div>
+  <button id="cartBtn">Show my Order</button>
+
+</body>
+<script src="app.js"></script>
+
+</html>
